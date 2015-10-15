@@ -1,0 +1,40 @@
+<h2>Grading Information</h2>
+
+The following is a list of how this application meets the rubric defined for this project.
+
+<h4>Rubric item 1 - Some form of input (widget: textbox, radio button, checkbox, ...)</h4>
+<div>
+	On the left panel are a series of widgets that let the user control the display.  The 
+	user can select the year.  And on the histogram tab the user can select the display order, and 
+	enter a threshold value for when to alert that number of Disaster Declartions.  When 
+	this value is meet or exceeded a message will be displayed.
+</div>
+
+<h4>Rubric Item 2 - Some operation on the ui input in server.R</h4>
+<div>
+	When you review server.R you will see several reactive funtions that utilize the values entered by
+	the user.   The histPlot utilizes the reactive renderPlot function to get the histogram display 
+	based on the render the	year, histogram order, and alert threshold(see below).  In a similar fashion, the 
+	USMap function uses gvisGeoChart to display a map of the states of the use color code by the number of 
+	disaster declarations occured in that state during the selected year. 
+</div>
+
+<h4>Rubic Item 3 - Some reactive output displayed as a result of server calculations</h4>
+<div>
+	The reactive function, output$numDeclExceededMessage. This function reacts to changes in the user entered alert
+	threshold value to display a message when the threshold is meet or exceeded.  If the threshold is 
+	exceeded the function will calculate a percentage by which the threshold is exceeded.
+</div>
+
+<h4>Rubic Item 4 - enough documentation so that a novice user could use your application</h4>
+<div>
+	While the application is simply to use, the Info tab provides instruction on using the 
+	application.
+</div>
+
+<h4>Rubic Item 5 - The documentation should be at the Shiny website itself</h4>
+<div>
+	Documentation for the application consists of this tab and the Info tab.  There should
+	be more than enough information provided to allow use of the application.
+</div>
+jk 10/13/2015
