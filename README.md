@@ -34,6 +34,6 @@ amount of data manipulation occurs when the user uses the UI controls to change 
  
 * GraderInfo.html - text display on the Grader Notes tab
  
-* FEMADevl.csv - FEMA declation data.  This raw data used to create this file was downloaded
+* FEMADecl.csv - FEMA disaster declation data.  This raw data used to create this file was downloaded
 from the FEMA site.  I used an R script to preprocess the data into the summaries found
 in this file.
